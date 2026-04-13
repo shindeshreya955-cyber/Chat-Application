@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Summary Dashboard</title>
+  <link rel="stylesheet" href="Fee Summary.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <section class="fee-summary-section">
+    <h1 class="section-title">💰 Fee Summary</h1>
+
+    <!-- Smart Alert -->
+    <div class="alert-box" id="alertBox">
+      ⚠️ Your next installment is due on <strong>Nov 10, 2025</strong> — don’t miss the deadline!
+    </div>
+
+    <!-- Fee Info Cards -->
+    <div class="fee-cards">
+      <div class="card">
+        <h3>Total College Fee</h3>
+        <p>₹60,000</p>
+      </div>
+      <div class="card">
+        <h3>Fees Paid</h3>
+        <p>₹42,000</p>
+      </div>
+      <div class="card">
+        <h3>Pending Fees</h3>
+        <p>₹18,000</p>
+      </div>
+      <div class="card">
+        <h3>Next Installment Date</h3>
+        <p>Nov 10, 2025</p>
+      </div>
+      <div class="card">
+        <h3>Late Fee (if any)</h3>
+        <p>₹0</p>
+      </div>
+    </div>
+
+    <!-- Animated Progress Bar -->
+    <div class="progress-container">
+      <label>Fees Paid Progress:</label>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <p id="progressText">70% Paid</p>
+    </div>
+
+    <!-- Pie Chart -->
+    <div class="chart-container">
+      <canvas id="feeChart"></canvas>
+    </div>
+
+    <!-- Receipts Button -->
+    <div class="receipt-btn-box">
+      <a href="View Receipts.html" id="receiptBtn">📄 View Receipts</a>
+      <a href="View Admissions.html" id="admissionsBtn">📄 Admissions / How to Apply</a>
+    </div>
+  </section>
+  
+
+
+
+  <script src="Fee Summary.js"></script>
+</body>
+</html>

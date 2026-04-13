@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d0eaff, #f0f6ff, #fff4e3);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.fee-summary-section {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.section-title {
+  text-align: center;
+  color: #2c3e91;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff8c42;
+  margin: 8px auto;
+  border-radius: 5px;
+}
+
+/* Smart Alert */
+.alert-box {
+  background: #fff3cd;
+  color: #856404;
+  padding: 12px 20px;
+  border-left: 5px solid #ffc107;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 25px;
+  animation: slideIn 1s ease forwards;
+}
+
+/* Fee Cards */
+.fee-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: linear-gradient(135deg, #eaf6ff, #fefefe);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Container */
+.progress-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 71, 171, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 71, 171, 0.3);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.progress-container label {
+  font-size: 16px;
+  color: #FFD700;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #0047AB, #FFD700);
+  border-radius: 10px;
+  animation: fillProgress 2s forwards;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5), 0 0 4px rgba(0, 71, 171, 0.5) inset;
+}
+
+@keyframes fillProgress {
+  0% { width: 0%; }
+  100% { width: 70%; } /* You can dynamically update this in JS */
+}
+
+#progressText {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* Receipt Button */
+.receipt-btn-box {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center; /* Center buttons */
+}
+
+.receipt-btn-box a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0047AB; /* Blue color */
+  color: #FFD700;      /* Gold text */
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.receipt-btn-box a:hover {
+  background: #FFD700; /* Swap colors on hover */
+  color: #0047AB;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,71,171,0.3), 0 0 6px rgba(255,215,0,0.3);
+}
+

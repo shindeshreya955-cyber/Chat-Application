@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Online</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <section class="apply-section">
+  <h2 class="section-title">📝 Apply Online</h2>
+  
+  <div class="apply-container">
+    <form id="applyForm" class="apply-form">
+      <div class="input-group">
+        <input type="text" id="fullName" required>
+        <label for="fullName">Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="email">Email Address</label>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" id="phone" required>
+        <label for="phone">Phone Number</label>
+      </div>
+
+      <div class="input-group">
+        <select id="course" required>
+          <option value="" disabled selected>Select Course</option>
+          <option>Computer Science</option>
+          <option>Mechanical Engineering</option>
+          <option>Civil Engineering</option>
+          <option>Electronics</option>
+          <option>Electrical Engineering</option>
+        </select>
+        <label for="course">Course</label>
+      </div>
+
+      <div class="input-group">
+        <input type="date" id="dob" required>
+        <label for="dob">Date of Birth</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" rows="4" placeholder="Additional Information (Optional)"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+
+    <div id="applyFeedback" class="feedback hidden">
+      <h3>✅ Thank you!</h3>
+      <p>Your application has been submitted successfully. We will contact you soon.</p>
+    </div>
+  </div>
+</section>
+<script src="apply.js"></script>
+
+</body>
+</html>

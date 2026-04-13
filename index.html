@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Fee Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <!-- Left: Logo + College Name -->
+  <div class="logo">
+    <img src="college logo.jpg" alt="College Logo">
+    <span>Nagesh Karajgi Orchid College Of Engineering And Technology</span>
+  </div>
+
+  <!-- Right: Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Student Info</a></li>
+      <li><a href="#">Fees</a></li>
+      <li><a href="#">Chat</a></li>
+      <li><a href="#" id="contactLink">Contact</a></li>
+      <li><a href="login.html" class="btn-login">Login</a></li>
+      <li><a href="signup.html" class="btn-signup">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <!-- YouTube Video Background -->
+    <div class="video-bg">
+      <iframe 
+      src="https://www.youtube.com/embed/YHaaylgcjuo?autoplay=1&mute=1&loop=1&playlist=YHaaylgcjuo" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="hero-content">
+    <h1>Welcome to <span>NKOCET</span> College Fee Management System</h1>
+    <p>Check your fee details, installments, and pay online with ease.</p>
+    <a href="NKOCET chatbot.html" class="btn">Chat bot </a>
+  </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Info Features</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Features section -->
+  <section class="features-section">
+    <h1 class="section-title">Student information</h1>
+    <div class="features-grid">
+      <div class="card" data-feature="personal">
+        <div class="icon">👨‍🎓</div>
+        <h3>Personal Details</h3>
+        <p>View student name, roll number, and basic personal info.</p>
+        <a href="Personal Details.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="academic">
+        <div class="icon">📚</div>
+        <h3>Academic Info</h3>
+        <p>Check your semester, department, and CGPA details.</p>
+        <a href="Academic Info.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="fees">
+        <div class="icon">💰</div>
+        <h3>Fee Summary</h3>
+        <p>See total, paid, and pending college fees with receipts.</p>
+        <a href="Fee Summary.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="installments">
+        <div class="icon">📅</div>
+        <h3>Installments</h3>
+        <p>Track installment dates and payment progress.</p>
+        <a href="Installments.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="scholarship">
+        <div class="icon">🎓</div>
+        <h3>Scholarship</h3>
+        <p>Know about caste-based and merit scholarships.</p>
+        <a href="Scholarship.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="hostel">
+        <div class="icon">🏠</div>
+        <h3>Hostel Info</h3>
+        <p>Hostel details, room number, and fee status.</p>
+        <a href="Hostel Info.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="contact">
+        <div class="icon">📞</div>
+        <h3>Contact Details</h3>
+        <p>Update your phone, email, and guardian information.</p>
+        <a href="Contact Details.html" class="feature-btn">View More</a>
+      </div>
+
+      <div class="card" data-feature="achievements">
+        <div class="icon">🏆</div>
+        <h3>Achievements</h3>
+        <p>Certificates, awards, and college activity records.</p>
+        <a href="Achievements.html" class="feature-btn">View More</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- fees section -->
+    <!-- Fee Section -->
+<section class="fees-section">
+  <h1 class="section-title">💰 Student Fee Dashboard</h1>
+  
+  <div class="fees-grid">
+  
+ <section class="fee-section">
+    <!-- Payment Success Toast -->
+    <div class="toast" id="paymentToast">Payment Successful ✅</div>
+
+    <!-- Caste-wise Fee Table -->
+    <div class="fee-structure">
+      <table id="feeTable">
+        <thead>
+          <tr>
+            <th>Caste</th>
+            <th>Total Fee</th>
+            <th>Scholarship</th>
+            <th>Pay Online</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General</td>
+            <td>₹60,000</td>
+            <td>10%</td>
+            <td><a href="payment.html" class="pay-btn" data-caste="General" data-amount="60000">Pay</a></td>
+          </tr>
+          <tr>
+            <td>OBC</td>
+            <td>₹50,000</td>
+            <td>15%</td>
+            <td><a href="pay 3 .html" class="pay-btn" data-caste="OBC" data-amount="50000">Pay</a></td>
+          </tr>
+          <tr>
+            <td>SC/ST</td>
+            <td>₹40,000</td>
+            <td>20%</td>
+            <td><a href="pay now.html" class="pay-btn" data-caste="SC/ST" data-amount="40000">Pay</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Payment Receipts Button -->
+<div class="receipt-button-container">
+  <a href="payment receipt.html" class="receipt-btn">View Payment Receipts</a>
+</div>
+
+<!-- chatbot section -->
+<section class="assistant-section">
+  <h1 class="section-title">Chatbot Assistant</h1>
+
+  <div class="assistant-container">
+    <!-- Left Side: College Photo -->
+    <div class="assistant-left">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2YxajJyeDhwYXA4YzZqeTY1a21vM2IyZ2U5NnZjMmk2Z2t6ZXJtYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Nc2slkPLPdpmWeCUZc/giphy.gif" 
+           alt="NKOCET Campus" />
+    </div>
+
+    <!-- Right Side: Chatbot -->
+    <div class="assistant-right">
+      <h2>NKOCET Smart Assistant 🤖</h2>
+      <p>Get instant answers about fees, scholarships, hostel, exams, and more!</p>
+
+      <!-- Unique Chatbot Button -->
+      <div class="assistant-buttons">
+        <a href="chatbot.html" class="chat-btn" title="Start Chatbot"></a>
+      </div>
+
+      <!-- Quick Info -->
+      <div class="assistant-info">
+        <ul>
+          <li>✅ Instant response to student queries</li>
+          <li>✅ Fees & scholarship information</li>
+          <li>✅ Hostel and accommodation guidance</li>
+          <li>✅ Exam forms & deadlines</li>
+          <li>✅ Fully responsive & mobile-friendly</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <h2 class="section-title">🎓 Alumni Testimonials</h2>
+
+  <div class="testimonial-container">
+    <div class="testimonial-track">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <img src="https://i.pinimg.com/originals/64/d4/9a/64d49ab7961d710c529efbe5a2292df8.jpg" alt="Alumni 1" class="alumni-photo">
+        <p class="quote">"NKOCET provided me with the skills and confidence to excel in my career. Highly recommended!"</p>
+        <h3 class="name">Ravi Sharma</h3>
+        <span class="degree">B.Tech - Computer Science</span>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.YgqBmquj_w1J3CXGk3XP4QHaF7?w=2500&h=2000&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Alumni 2" class="alumni-photo">
+        <p class="quote">"The faculty support and campus facilities helped me achieve academic excellence."</p>
+        <h3 class="name">Priya Singh</h3>
+        <span class="degree">B.Tech - Mechanical Engineering</span>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.oWuY6P5KljvuhIhp6M5xMgHaE7?w=1024&h=682&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Alumni 3" class="alumni-photo">
+        <p class="quote">"Campus life at NKOCET was amazing! Lifelong friends and memories."</p>
+        <h3 class="name">Amit Joshi</h3>
+        <span class="degree">B.Tech - Civil Engineering</span>
+      </div>
+
+    </div>
+
+    <!-- Carousel Buttons -->
+    <button class="testimonial-btn prev">❮</button>
+    <button class="testimonial-btn next">❯</button>
+  </div>
+</section>
+
+
+<!-- Contact & Footer Section -->
+ <section class="assistant-section">
+  <h1 class="section-title">Contact Us</h1>
+  <div class="contact-container">
+    <h2 class="contact-title">📬 Contact NKOCET</h2>
+
+    <form id="contactForm" class="contact-form">
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label for="name">Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required>
+        <label for="email">Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="subject" required>
+        <label for="subject">Subject</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" rows="5" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+    
+    <!-- College Info on Right -->
+      <div class="college-info">
+        <h3>📍 College Information</h3>
+        <ul>
+          <li><strong>Address:</strong> Nagesh Karajagi Orchid College of Engineering & Technology, Solapur</li>
+          <li><strong>Phone:</strong> +91 98765 43210</li>
+          <li><strong>Email:</strong> info@nkocet.edu.in</li>
+          <li><strong>Timings:</strong> Mon - Sat | 9:00 AM - 5:00 PM</li>
+        </ul>
+
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps?q=nknavle Nagesh Karajagi Orchid College of Engineering & Technology, Solapur
+&output=embed"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactFeedback" class="feedback"></div>
+  </div>
+</section>
+    
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3 class="footer-title">Nagesh Karajagi Orchid College of Engineering & Technology, Solapur</h3>
+    <p class="footer-desc">
+      Empowering innovation, knowledge, and excellence since 1998.
+    </p>
+
+    <div class="social-icons">
+      <a href="#" target="_blank" title="Facebook">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook">
+      </a>
+      <a href="#" target="_blank" title="Instagram">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/415/original/instagram-logo-instagram-icon-transparent-free-png.png" alt="Instagram">
+      </a>
+      <a href="#" target="_blank" title="LinkedIn">
+        <img src="https://static.vecteezy.com/system/resources/previews/018/930/480/large_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="LinkedIn">
+      </a>
+      <a href="#" target="_blank" title="Twitter">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.z6EOhTBMrGK1j-VD0Q9YlwHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Twitter">
+      </a>
+    </div>
+
+    <p class="footer-copy">© 2025 NKOCET College. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

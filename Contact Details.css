@@ -1,0 +1,86 @@
+.contact-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1e3c72;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-card {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: fadeInUp 0.8s ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #f1c40f;
+}
+
+.card-content input,
+.card-content select,
+.card-content label {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-content input:focus,
+.card-content select:focus {
+  box-shadow: 0 0 10px rgba(241,196,15,0.6);
+  transform: scale(1.02);
+}
+
+.card-content input[type="file"] {
+  color: #fff;
+  background: rgba(241,196,15,0.2);
+}
+
+.save-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#saveContactBtn {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e3c72;
+  background: #f1c40f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#saveContactBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(241,196,15,0.6);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(20px);}
+  100% {opacity: 1; transform: translateY(0);}
+}

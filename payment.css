@@ -1,0 +1,121 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Mono&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #f4f7f8;
+  margin: 0;
+  padding: 0;
+  color: #1e3c72;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg,#1e3c72,#f1c40f);
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.header .logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Section */
+.payment-section {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.section-title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+/* Form */
+.payment-form fieldset {
+  border: 2px solid #1e3c72;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.payment-form legend {
+  font-weight: bold;
+  color: #f1c40f;
+}
+.payment-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.payment-form input, .payment-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Payment method */
+.payment-method {
+  margin-top: 10px;
+}
+.payment-method label {
+  margin-left: 8px;
+}
+
+/* Card Details */
+.card-details {
+  display: none;
+}
+.card-info {
+  display: flex;
+  gap: 10px;
+}
+.card-info input { flex: 1; }
+
+/* UPI QR */
+.upi-qrcode {
+  display: none;
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* Pay Button */
+.pay-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #1e3c72;
+  color: #f1c40f;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.pay-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(241,196,15,0.6);
+}
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #1e3c72;
+  color: #f1c40f;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: none;
+  font-weight: bold;
+  z-index: 1000;
+}

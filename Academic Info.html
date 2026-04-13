@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Academic Info.css">
+</head>
+<body>
+
+  <div class="academic-container">
+    <h1>📚 Academic Information</h1>
+
+    <form id="academicForm">
+      <input type="text" id="studentName" placeholder="Enter Your Name" required>
+      <input type="text" id="department" placeholder="Department" required>
+      <input type="text" id="Attendance %" placeholder="Attendance %" required>
+      <select id="semester" required>
+        <option value="">Select Semester</option>
+        <option value="1st Semester">1st Semester</option>
+        <option value="2nd Semester">2nd Semester</option>
+        <option value="3rd Semester">3rd Semester</option>
+        <option value="4th Semester">4th Semester</option>
+        <option value="5th Semester">5th Semester</option>
+        <option value="6th Semester">6th Semester</option>
+        <option value="7th Semester">7th Semester</option>
+        <option value="8th Semester">8th Semester</option>
+      </select>
+      <input type="number" id="cgpa" placeholder="CGPA (0-10)" step="0.01" min="0" max="10" required>
+      <button type="submit">Show Academic Info</button>
+    </form>
+
+    <div id="academicCardContainer" class="card-container"></div>
+  </div>
+
+  <script src="Academic Info.js"></script>
+</body>
+</html>

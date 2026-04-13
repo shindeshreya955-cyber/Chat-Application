@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NKOCET Smart Assistant Form</title>
+  <link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+  <div class="chatbot-form-container">
+    <div class="chatbot-header">
+      <img src="college logo.jpg" alt="NKOCET Logo" class="college-logo" />
+      <h2>NKOCET Smart Assistant</h2>
+      <p>Fill your details to get instant help 💬</p>
+    </div>
+
+    <form class="chatbot-form" id="chatbotForm">
+      <div class="form-group">
+        <label>👩‍🎓 Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label>🧾 Roll Number</label>
+        <input type="text" id="rollNo" placeholder="e.g. CS123" required />
+      </div>
+
+      <div class="form-group">
+        <label>🎓 Department</label>
+        <select id="department" required>
+          <option value="">-- Select Department --</option>
+          <option>Computer Science</option>
+          <option>Mechanical</option>
+          <option>Civil</option>
+          <option>Electronics</option>
+          <option>Electrical</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>💡 Query Type</label>
+        <select id="queryType" required>
+          <option value="">-- Select Query --</option>
+          <option>Fee Details</option>
+          <option>Scholarship Info</option>
+          <option>Hostel Details</option>
+          <option>Exam Form Help</option>
+          <option>General Inquiry</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>📝 Your Message</label>
+        <textarea id="message" placeholder="Type your query here..." rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Query</button>
+    </form>
+
+    <div class="thank-you hidden" id="thankYouMessage">
+      <h3>✅ Thank you, <span id="userName"></span>!</h3>
+      <p>Your query has been recorded successfully.<br>Our team will contact you soon 📩</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("chatbotForm");
+    const thankYou = document.getElementById("thankYouMessage");
+    const userName = document.getElementById("userName");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("studentName").value;
+      userName.textContent = name;
+      form.classList.add("hidden");
+      thankYou.classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>
+
+
+  <script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Achievements</title>
+  <link rel="stylesheet" href="achievements.css">
+</head>
+<body>
+  <section class="achievements-section">
+
+    <!-- Section Title -->
+    <h2 class="section-title">🏆 Achievements & Awards</h2>
+
+    <!-- Achievements Cards Grid -->
+    <div class="achievements-grid">
+
+      <!-- Academic -->
+      <div class="achievement-card">
+        <div class="card-front">
+          <img src="https://th.bing.com/th/id/R.36e6d5dbe1acd0dae4f39e3e473221eb?rik=mqfyi0VzcrASfA&riu=http%3a%2f%2fclipartix.com%2fwp-content%2fuploads%2f2016%2f06%2fGraduation-cap-clipart-picture.png&ehk=2yBj1we5PY7mTJEtaTJWsH2oMm74q0xL9Y%2bJ%2fpBgfd4%3d&risl=1&pid=ImgRaw&r=0" alt="Academic">
+          <h3>Academic</h3>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Merit Certificates & Topper Awards</li>
+            <li>Dean’s List Recognition</li>
+            <li>Scholarships & Academic Honors</li>
+          </ul>
+          <button class="download-btn">Download PDF</button>
+        </div>
+      </div>
+
+      <!-- Co-Curricular -->
+      <div class="achievement-card">
+        <div class="card-front">
+          <img src="https://img.icons8.com/color/96/000000/trophy.png" alt="Sports">
+          <h3>Co-Curricular</h3>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Sports Medals / Trophies</li>
+            <li>Cultural Events: Dance, Music, Drama</li>
+            <li>Debate, Quiz & Hackathon Certificates</li>
+          </ul>
+          <button class="download-btn">Download PDF</button>
+        </div>
+      </div>
+
+      <!-- Professional -->
+      <div class="achievement-card">
+        <div class="card-front">
+          <img src="https://img.icons8.com/color/96/000000/certificate.png" alt="Professional">
+          <h3>Professional</h3>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Internship Completion Certificates</li>
+            <li>Online Course Certifications</li>
+            <li>Workshop & Training Programs</li>
+          </ul>
+          <button class="download-btn">Download PDF</button>
+        </div>
+      </div>
+
+      <!-- College Activities -->
+      <div class="achievement-card">
+        <div class="card-front">
+          <img src="https://img.icons8.com/color/96/000000/group.png" alt="Activities">
+          <h3>College Activities</h3>
+        </div>
+        <div class="card-back">
+          <ul>
+            <li>Club Participation (NSS, Tech Clubs)</li>
+            <li>Leadership Roles & Coordination</li>
+            <li>Community Service & Volunteering</li>
+          </ul>
+          <button class="download-btn">Download PDF</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Timeline -->
+    <h2 class="timeline-title">Achievements Timeline</h2>
+    <div class="timeline-slider">
+      <div class="timeline-card">Semester 1: Academic Topper 🎓</div>
+      <div class="timeline-card">Semester 2: Sports Medal 🏅</div>
+      <div class="timeline-card">Semester 3: Hackathon Winner 💻</div>
+      <div class="timeline-card">Semester 4: Cultural Fest Champion 🎭</div>
+    </div>
+
+    <!-- Pie Chart Section -->
+    <div class="chart-section">
+      <canvas id="achievementPie"></canvas>
+    </div>
+
+  </section>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="achievements.js"></script>
+</body>
+</html>

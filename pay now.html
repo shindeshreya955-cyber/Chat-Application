@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay Fees</title>
+  <link rel="stylesheet" href="pay now.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+
+  <header class="pay-header">
+    <img src="college logo.jpg" alt="College Logo" class="college-logo">
+    <h1>💳 Fee Payment Portal</h1>
+    <p>Select your payment method and complete the transaction.</p>
+  </header>
+
+  <section class="payment-methods">
+    <h2>Choose Payment Method</h2>
+    <div class="method-grid">
+      <div class="method-card">
+        <h3>QR Code Payment</h3>
+        <canvas id="qrPayment"></canvas>
+        <p>Scan the QR code using your UPI / Banking app.</p>
+      </div>
+      <div class="method-card">
+        <h3>Credit / Debit Card</h3>
+        <p>Enter card details and pay online.</p>
+        <button class="pay-btn" onclick="simulatePayment()">Pay ₹40,000</button>
+      </div>
+      <div class="method-card">
+        <h3>Net Banking</h3>
+        <p>Select your bank and complete the payment.</p>
+        <button class="pay-btn" onclick="simulatePayment()">Pay ₹40,000</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment Success Toast -->
+  <div class="toast" id="paymentToast">Payment Successful ✅</div>
+
+  <script src="pay now.js"></script>
+</body>
+</html>
+
+    
+</body>
+</html>

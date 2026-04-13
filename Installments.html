@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Installments Tracker • College</title>
+
+  <!-- Fonts + Chart.js + jsPDF -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <link rel="stylesheet" href="Installments.css">
+</head>
+<body>
+  <main class="installment-section">
+    <div class="watermark">NKOCET</div>
+
+    <header class="install-header">
+      <h1>💳 Installments Tracker</h1>
+      <div class="reminder-controls">
+        <div class="reminder-box" id="reminderBox">⏰ Next due in <strong id="daysLeft">--</strong> days</div>
+        <label class="toggle">
+          <input type="checkbox" id="reminderToggle" checked>
+          <span>Reminders</span>
+        </label>
+      </div>
+    </header>
+
+    <section class="overview">
+      <div class="overview-cards">
+        <div class="card">
+          <h4>Total Installments</h4>
+          <p id="totalInst">4</p>
+        </div>
+        <div class="card glow" id="paidCard">
+          <h4>Installments Paid</h4>
+          <p id="paidInst">2</p>
+        </div>
+        <div class="card">
+          <h4>Pending</h4>
+          <p id="pendingInst">2</p>
+        </div>
+        <div class="card">
+          <h4>Next Due</h4>
+          <p id="nextDue">25-Oct-2025</p>
+        </div>
+      </div>
+
+      <div class="progress-and-chart">
+        <div class="progress-wrap">
+          <label>Overall Payment Progress</label>
+          <div class="progress-track">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <div class="progress-meta">
+            <span id="progressPercent">0%</span> complete
+          </div>
+        </div>
+
+        <div class="chart-wrap">
+          <canvas id="installmentChart" width="220" height="220"></canvas>
+          <div class="chart-legend"><span class="paid-dot"></span> Paid <span class="pending-dot"></span> Pending</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+      <h2>Installment Timeline</h2>
+      <div class="timeline" id="timeline">
+        <!-- timeline items inserted by JS -->
+      </div>
+    </section>
+
+    <!-- Table + Actions -->
+    <section class="table-section">
+      <h2>Installment Schedule</h2>
+      <div class="table-actions">
+        <div class="scholarship">
+          <label>Scholarship (%)</label>
+          <input type="number" id="scholarshipInput" min="0" max="100" step="1" value="0">
+          <button id="applyScholar">Apply</button>
+        </div>
+
+        <div class="download-actions">
+          <button id="downloadSchedule">🧾 Download Plan (PDF)</button>
+          <button id="openReceipts">📄 View Receipts</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="inst-table" id="instTable">
+          <thead>
+            <tr><th>No</th><th>Amount</th><th>Due Date</th><th>Status</th><th>Action</th></tr>
+          </thead>
+          <tbody>
+            <!-- rows added by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Receipts Modal -->
+  <div class="modal" id="receiptsModal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeReceipts">&times;</button>
+      <h3>🧾 Payment Receipts</h3>
+      <div class="receipts-list" id="receiptsList">
+        <!-- receipts populated by JS -->
+      </div>
+      <div class="modal-actions">
+        <button id="printReceipts">🖨️ Print</button>
+        <button id="downloadAllPDF">⬇️ Download All (PDF)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Installments.html"></script>
+</body>
+</html>

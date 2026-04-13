@@ -1,0 +1,77 @@
+/* Login Container */
+.login-container {
+  width: 350px;
+  margin: 60px auto;
+  background: #002147; /* College dark blue */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #f1c40f; /* Golden Title */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #f9e79f;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f1c40f;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #1abc9c; /* Green focus effect */
+}
+
+/* Login Button */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background: #f39c12; /* Orange-gold */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #d68910;
+}
+
+/* Extra Links */
+.extra-link {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.extra-link a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.extra-link a:hover {
+  text-decoration: underline;
+}

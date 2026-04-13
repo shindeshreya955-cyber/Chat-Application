@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Receipt - NKOCET</title>
+  <link rel="stylesheet" href="payment receipt.css">
+</head>
+<body>
+
+  <!-- Receipt Card -->
+  <div class="receipt-modal" id="receiptModal">
+    <div class="receipt-card" id="receiptCard">
+      <header>
+        <img src="college logo.jpg" alt="NKOCET Logo" class="logo">
+        <h2>Payment Receipt</h2>
+      </header>
+
+      <div class="receipt-body">
+        <p><strong>Student Name:</strong> <span id="studentName">John Doe</span></p>
+        <p><strong>Roll No:</strong> <span id="rollNo">CS123</span></p>
+        <p><strong>Caste:</strong> <span id="receiptCaste">General</span></p>
+        <p><strong>Amount Paid:</strong> ₹<span id="receiptAmount">60000</span></p>
+        <p><strong>Payment Method:</strong> QR Code</p>
+        <p><strong>Transaction ID:</strong> <span id="txnId">TXN123456</span></p>
+        <div class="qr-code">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Payment:60000" alt="QR Code">
+        </div>
+        <p class="status success">✅ Payment Successful</p>
+      </div>
+
+      <div class="receipt-actions">
+        <button id="downloadReceipt" class="btn">Download PDF</button>
+        <button id="closeReceipt" class="btn close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="payment receipt.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <link rel="stylesheet" href="Contact Details.css">
+</head>
+<body>
+
+    <section class="contact-section">
+  <h2 class="section-title">📇 Contact Details</h2>
+
+  <!-- Personal Info Card -->
+  <div class="contact-card personal-card">
+    <h3>Personal Contact Information</h3>
+    <div class="card-content">
+      <input type="text" id="studentPhone" placeholder="Student Phone Number" />
+      <input type="email" id="studentEmail" placeholder="Email ID" />
+      <input type="text" id="altPhone" placeholder="Alternate Contact Number" />
+    </div>
+  </div>
+
+  <!-- Guardian Info Card -->
+  <div class="contact-card guardian-card">
+    <h3>Guardian / Parent Details</h3>
+    <div class="card-content">
+      <input type="text" id="fatherName" placeholder="Father's Name" />
+      <input type="text" id="fatherPhone" placeholder="Father's Contact" />
+      <input type="text" id="motherName" placeholder="Mother's Name" />
+      <input type="text" id="motherPhone" placeholder="Mother's Contact" />
+      <input type="email" id="guardianEmail" placeholder="Guardian Email" />
+      <input type="text" id="emergencyContact" placeholder="Emergency Contact" />
+    </div>
+  </div>
+
+  <!-- Address Card -->
+  <div class="contact-card address-card">
+    <h3>Address Information</h3>
+    <div class="card-content">
+      <input type="text" id="currentAddress" placeholder="Current Address" />
+      <input type="text" id="permanentAddress" placeholder="Permanent Address" />
+      <input type="text" id="cityState" placeholder="City / State / Pin" />
+    </div>
+  </div>
+
+  <!-- Notifications Card -->
+  <div class="contact-card notification-card">
+    <h3>Notifications / Preferences</h3>
+    <div class="card-content">
+      <label><input type="checkbox" id="smsAlerts" /> SMS Alerts</label>
+      <label><input type="checkbox" id="emailAlerts" /> Email Notifications</label>
+      <select id="preferredContact">
+        <option value="">Preferred Contact Method</option>
+        <option value="phone">Phone</option>
+        <option value="email">Email</option>
+        <option value="whatsapp">WhatsApp</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Optional / Extra Card -->
+  <div class="contact-card extra-card">
+    <h3>Optional / Extra</h3>
+    <div class="card-content">
+      <input type="text" id="linkedin" placeholder="LinkedIn Profile URL" />
+      <input type="email" id="altEmail" placeholder="Alternate Email" />
+      <input type="file" id="profilePhoto" accept="image/*" />
+    </div>
+  </div>
+
+  <div class="save-btn-container">
+    <button id="saveContactBtn">💾 Save Contact Details</button>
+  </div>
+</section>
+<script src="Contact Details.js"></script>
+
+
+
+    
+</body>
+</html>
