@@ -3,7 +3,7 @@ Built a platform with real-time chat and a chatbot to help students access infor
 
 
 
-🚀 NKOCET Smart Assistant
+🚀** NKOCET Smart Assistant**
 
 NKOCET Smart Assistant is a web-based chatbot system designed for college students to get instant information about fees, scholarships, hostel, exams, and more.
 
@@ -11,7 +11,9 @@ It simplifies communication between students and administration using a structur
 
 
 
-❗ The Problem
+
+
+❗ **The Problem**
 College students often face issues like:
 
 📄 Information scattered across notice boards, WhatsApp, and office visits
@@ -21,7 +23,9 @@ College students often face issues like:
 
 
 
-💡 The Solution
+
+
+💡 **The Solution**
 NKOCET Smart Assistant solves this by:
 
 1. Providing instant chatbot-based responses
@@ -32,7 +36,8 @@ NKOCET Smart Assistant solves this by:
 
 
 
-✨ Features
+
+✨ **Features**
 
 | Feature         | Description                                 |
 | --------------- | ------------------------------------------- |
@@ -48,7 +53,9 @@ NKOCET Smart Assistant solves this by:
 
 
 
-🛠️ Tech Stack
+
+
+🛠️ **Tech Stack**
 | Layer    | Technology                         |
 | -------- | ---------------------------------- |
 | Frontend | HTML, CSS, JavaScript              |
@@ -60,4 +67,114 @@ NKOCET Smart Assistant solves this by:
 
 
 
+
+📁 ** Project Structure**
+nkocet-chatbot/
+│
+├── index.html                # Landing page
+├── chatbot.html              # Chatbot UI
+├── contact.html              # Contact form
+├── hostel.html               # Hostel info
+│
+├── css/
+│   ├── style.css
+│   ├── chatbot.css
+│   └── hostel.css
+│
+├── js/
+│   ├── chatbot.js
+│   ├── contact.js
+│   └── animations.js
+│
+├── backend/
+│   ├── db.php                # Database connection
+│   ├── submit_query.php      # Save student queries
+│   └── fetch_response.php    # Chatbot responses
+│
+├── database/
+│   └── nkocet.sql            # MySQL tables
+│
+└── assets/
+    ├── images/
+    └── icons/
+
+
+
+
+
+
+
+⚙️ **Setup (XAMPP)**
+
+**1. Install XAMPP**
+Start Apache and MySQL
+
+**2. Move Project**
+C:\xampp\htdocs\nkocet-chatbot
+
+**3. Create Database**
+Go to **phpMyAdmin** → Create DB:
+      -nkocet_db
+
+
+**4. Create Table**
+CREATE TABLE queries (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  subject VARCHAR(200),
+  message TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+
+🌐** Pages**
+
+| Page            | Description       |
+| --------------- | ----------------- |
+| `/index.html`   | Landing Page      |
+| `/chatbot.html` | Chatbot Assistant |
+| `/contact.html` | Contact Form      |
+| `/hostel.html`  | Hostel Details    |
+
+
+
+
+
+
+📊 **Database Schema**
+queries
+- id
+- name
+- email
+- subject
+- message
+- created_at
+
+
+
+
+🚀 **Future Improvements**:
+    🔐 Admin login panel
+    🤖 AI-based chatbot (Gemini/OpenAI)
+    📱 WhatsApp integration
+    📊 Dashboard analytics
+    📍 Live notifications
+
+
+
+    
+👩‍💻 **Team**
+Built by students of NKOCET 🎓
+
+
+📜** License**
+This project is for academic use.
+
+
+❤️ **Final Line**
+NKOCET Smart Assistant — Making student support faster, smarter, and easier
    
